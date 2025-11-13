@@ -16,17 +16,19 @@ The workflow consists of:
 
 ```
 .
+├── CITATION.cff
 ├── environment_minimal.yaml
 ├── environment.yaml
+├── LICENSE
+├── README.md
 ├── src
-│   └── signalvelocity
-│       ├── cli.py
-│       ├── core.py
-│       └── __pycache__
+│   └── signalvelocity
+│       ├── cli.py
+│       └── core.py
 └── tests
     ├── bws.lst
-    ├── ExpectedOutput.SignalVelocity_H3K4me3.binSize_50.bed
-    ├── ExpectedOutput.SignalVelocity_H3K4me3.VelocityPlot.pdf
+    ├── ExpectedOutput.Velocity_H3K4me3.binSize_50.bed
+    ├── ExpectedOutput.Velocity_H3K4me3.VelocityPlot.pdf
     ├── H3K4me3_DMSO.bwc.bin_50.bdg
     ├── H3K4me3_ST1.bwc.bin_50.bdg
     └── regionOfInterest.bed
