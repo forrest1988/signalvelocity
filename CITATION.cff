@@ -7,13 +7,13 @@ authors:
   - family-names: "Rosikiewicz"
     given-names: "Wojciech"
 
-version: "v0.2.0"
+version: "v0.2.1"
 repository-code: "https://github.com/forrest1988/signalvelocity"
 license: "MIT"
 
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.TBD"
+    value: "10.5281/zenodo.17596297"
 
 preferred-citation:
   type: software
@@ -21,6 +21,6 @@ preferred-citation:
     - family-names: "Rosikiewicz"
       given-names: "Wojciech"
   title: "SignalVelocity"
-  version: "v0.2.0"
-  doi: "10.5281/zenodo.TBD"
+  version: "v0.2.1"
+  doi: "10.5281/zenodo.17596297"
   repository-code: "https://github.com/forrest1988/signalvelocity"
