@@ -5,10 +5,16 @@
 
 SignalVelocity is a Python tool for creating **quiver ("velocity") plots** comparing two ChIP-seq (or similar) signal tracks over a **single genomic region of interest**.
 
-The workflow consists of:
+The SignalVelocity workflow consists of the following steps:
 
-1. Converting bigWig files to **binned bedGraph** files over a selected region.
-2. Feeding two bedGraph files into `signalvelocity` to generate a **PDF velocity plot** and a **binned BED** file.
+1. Convert each bigWig signal track into a **binned bedGraph** file restricted to the genomic region of interest.
+2. Use `signalvelocity` to process the two bedGraph files and generate:
+   - a **PDF velocity plot** visualizing directional changes between conditions, and  
+   - a corresponding **binned BED file** documenting the exact bins used.
+3. (Optional, but recommended) Refine the PDF for presentation or publication using a vector-graphics editor such as [Inkscape](https://www.inkscape.org/).
+
+Note: The visual appearance of the velocity plot (e.g., arrow density, bin size, scaling) often benefits from trial-and-error tuning.  
+Different genomic regions and signal profiles may require slightly different parameter choices to achieve optimal readability.
 
 ---
 
