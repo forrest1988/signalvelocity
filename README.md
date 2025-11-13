@@ -171,9 +171,12 @@ conda activate signalvelocity
 
 ---
 
-## How to cite
+## License
+This project is licensed under the MIT License.  
+See the [LICENSE](./LICENSE) file for details.
 
-If you use this tool, please acknowledge it as:
+## Citation
+If you use SignalVelocity in your research, please cite the archived release:
 
-> “SignalVelocity ([https://github.com/forrest1988/signalvelocity](https://github.com/forrest1988/signalvelocity)) was used to generate directional signal velocity plots comparing ChIP-seq tracks across genomic regions.”
+**Rosikiewicz W. SignalVelocity (v0.2.0). Zenodo. https://doi.org/10.5281/zenodo.TBD**
 
