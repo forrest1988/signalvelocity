@@ -1,0 +1,8 @@
+name: velocitytrackplot
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - numpy
+  - matplotlib
+  - deeptools>=3.4.0
