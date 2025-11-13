@@ -1,5 +1,8 @@
 # SignalVelocity
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17596297.svg)](https://doi.org/10.5281/zenodo.17596297)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
 SignalVelocity is a Python tool for creating **quiver ("velocity") plots** comparing two ChIP-seq (or similar) signal tracks over a **single genomic region of interest**.
 
 The workflow consists of:
@@ -24,8 +27,8 @@ The workflow consists of:
     ├── bws.lst
     ├── ExpectedOutput.SignalVelocity_H3K4me3.binSize_50.bed
     ├── ExpectedOutput.SignalVelocity_H3K4me3.VelocityPlot.pdf
-    ├── H3K4me3_DMSO.merged.bwc.bin_50.bdg
-    ├── H3K4me3_SynTEF1.merged.bwc.bin_50.bdg
+    ├── H3K4me3_DMSO.bwc.bin_50.bdg
+    ├── H3K4me3_ST1.bwc.bin_50.bdg
     └── regionOfInterest.bed
 ```
 
@@ -73,7 +76,7 @@ Example `bws.lst`:
 
 ```
 /absolute/path/to/file/H3K4me3_DMSO.bw
-/absolute/path/to/file/H3K4me3_SynTEF1.bw
+/absolute/path/to/file/H3K4me3_ST1.bw
 ```
 
 If multiple replicates exist per condition, it is recommended to merge them before this step.
@@ -130,8 +133,8 @@ To generate the velocity/quiver plot from two bedGraph files, run:
 ```
 cd tests
 python -m signalvelocity.cli \
-  H3K4me3_DMSO.merged.bwc.bin_50.bdg \
-  H3K4me3_SynTEF1.merged.bwc.bin_50.bdg \
+  H3K4me3_DMSO.bwc.bin_50.bdg \
+  H3K4me3_ST1.bwc.bin_50.bdg \
   --binSize 50 \
   --layers 5 \
   --width 0.017 \
@@ -178,5 +181,5 @@ See the [LICENSE](./LICENSE) file for details.
 ## Citation
 If you use SignalVelocity in your research, please cite the archived release:
 
-**Rosikiewicz W. SignalVelocity (v0.2.0). Zenodo. https://doi.org/10.5281/zenodo.TBD**
+**Rosikiewicz W. SignalVelocity (v0.2.0). Zenodo. https://doi.org/10.5281/zenodo.17596297**
 
